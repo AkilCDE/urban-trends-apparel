@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#121212" />
+    </linearGradient>
+    
+    <!-- Urban pattern -->
+    <pattern id="urban-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="200" height="200" fill="none" />
+      <path d="M0,0 L200,0 L200,200 L0,200 Z" fill="none" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.1" />
+      <path d="M50,0 L50,200" fill="none" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.1" />
+      <path d="M100,0 L100,200" fill="none" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.1" />
+      <path d="M150,0 L150,200" fill="none" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.1" />
+      <path d="M0,50 L200,50" fill="none" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.1" />
+      <path d="M0,100 L200,100" fill="none" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.1" />
+      <path d="M0,150 L200,150" fill="none" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.1" />
+    </pattern>
+    
+    <!-- Glowing circles -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- Urban pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#urban-pattern)" />
+  
+  <!-- Decorative elements -->
+  <circle cx="300" cy="200" r="80" fill="#ff6b6b" fill-opacity="0.1" filter="url(#glow)" />
+  <circle cx="1600" cy="800" r="120" fill="#ff6b6b" fill-opacity="0.1" filter="url(#glow)" />
+  <circle cx="800" cy="900" r="60" fill="#ff6b6b" fill-opacity="0.1" filter="url(#glow)" />
+  
+  <!-- Urban silhouette -->
+  <path d="M0,1080 L0,800 L100,750 L200,800 L300,700 L400,750 L500,650 L600,700 L700,600 L800,650 L900,550 L1000,600 L1100,500 L1200,550 L1300,450 L1400,500 L1500,400 L1600,450 L1700,350 L1800,400 L1920,350 L1920,1080 Z" fill="#0d0d0d" fill-opacity="0.3" />
+  
+  <!-- Fashion elements -->
+  <g transform="translate(1200, 300)">
+    <path d="M0,0 C20,-20 40,-20 60,0 C80,20 100,20 120,0 C140,-20 160,-20 180,0 C200,20 220,20 240,0 C260,-20 280,-20 300,0 C320,20 340,20 360,0 C380,-20 400,-20 420,0 C440,20 460,20 480,0 C500,-20 520,-20 540,0 C560,20 580,20 600,0" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+  </g>
+  
+  <g transform="translate(300, 600)">
+    <path d="M0,0 C20,-20 40,-20 60,0 C80,20 100,20 120,0 C140,-20 160,-20 180,0 C200,20 220,20 240,0 C260,-20 280,-20 300,0 C320,20 340,20 360,0 C380,-20 400,-20 420,0 C440,20 460,20 480,0 C500,-20 520,-20 540,0 C560,20 580,20 600,0" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+  </g>
+  
+  <!-- Fashion icons -->
+  <g transform="translate(150, 150)">
+    <path d="M0,0 L40,0 L40,80 L0,80 Z" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+    <path d="M20,0 L20,80" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+    <path d="M0,40 L40,40" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+  </g>
+  
+  <g transform="translate(1700, 150)">
+    <path d="M0,0 L40,0 L40,80 L0,80 Z" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+    <path d="M20,0 L20,80" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+    <path d="M0,40 L40,40" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+  </g>
+  
+  <!-- Fashion hanger -->
+  <g transform="translate(900, 200)">
+    <path d="M0,0 C20,-20 40,-20 60,0 L60,60 L0,60 Z" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-opacity="0.3" />
+  </g>
+</svg> 
